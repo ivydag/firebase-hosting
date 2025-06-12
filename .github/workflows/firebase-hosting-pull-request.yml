@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run:
+      - run: |
         cd angular-app
         npm ci
         npm ci && npm run build
